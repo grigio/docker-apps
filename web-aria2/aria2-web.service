@@ -1,0 +1,6 @@
+[Unit]
+Description=Aria2 web ui
+[Service]
+ExecStart=/usr/bin/busybox httpd -f -p 8080 -h /webui-aria2
+[Install]
+WantedBy=multi-user.target

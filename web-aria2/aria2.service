@@ -1,0 +1,6 @@
+[Unit]
+Description=Aria2 daemon
+[Service]
+ExecStart=/usr/bin/aria2c --enable-rpc --rpc-listen-all --dir=/data
+[Install]
+WantedBy=multi-user.target
