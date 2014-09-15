@@ -1,1 +1,1 @@
-docker build -t grigio/archlinux_system .
+docker build -t grigio/archlinux-systemd .

@@ -1,0 +1,9 @@
+
+[Unit]
+Description=Syncthing +  Web UI
+[Service]
+Environment="STGUIADDRESS=http://0.0.0.0:8080"
+Environment="HOME=/data"
+ExecStart=/syncthing/syncthing
+[Install]
+WantedBy=multi-user.target
