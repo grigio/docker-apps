@@ -2,6 +2,7 @@
 [Unit]
 Description=Syncthing +  Web UI
 [Service]
+User=dummy
 Environment="STGUIADDRESS=http://0.0.0.0:8080"
 Environment="HOME=/data"
 ExecStart=/syncthing/syncthing

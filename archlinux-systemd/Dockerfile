@@ -15,6 +15,7 @@ rm -f /lib/systemd/system/basic.target.wants/*;
 # switch default target from graphical to multi-user
 RUN systemctl set-default multi-user.target 
 
+RUN useradd --uid 1000 dummy
 
 VOLUME [ "/sys/fs/cgroup" ]
 CMD ["/usr/bin/init"]
