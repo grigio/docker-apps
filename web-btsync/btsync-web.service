@@ -1,0 +1,9 @@
+
+[Unit]
+Description=Bittorrent Sync +  Web UI
+[Service]
+User=dummy
+Environment="BTSYNC=http://0.0.0.0:test"
+ExecStart=/usr/bin/btsync --config /data/btsync.conf --nodaemon
+[Install]
+WantedBy=multi-user.target
