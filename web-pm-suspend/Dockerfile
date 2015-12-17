@@ -1,11 +1,11 @@
-FROM debian:8
+FROM alpine:3.2
+MAINTAINER Luigi Maselli grigio.org
 
-ENV DEBIAN_FRONTEND noninteractive
 
-RUN apt-get update && apt-get install pm-utils nodejs -y \
-    && rm -rf /var/lib/apt/lists/*
+RUN apk add --update pm-utils nodejs && \
+    rm -rf /var/cache/apk/*
 
 ADD ./app.js /
 
 EXPOSE 8080
-CMD ["nodejs", "app.js"]
+CMD ["node", "app.js"]
