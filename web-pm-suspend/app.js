@@ -14,7 +14,7 @@ function handleRequest(request, response) {
     });
   } else { // default
     response.writeHead(200, {"Content-Type": "text/html"});
-    response.end('Press the red button to standby. <a style="color:red;" href="/standby">Button</a> ');
+    response.end('<body style="text-align:center"><a style="color: #EAEAEA;font-family: sans-serif;   text-align: center;background: #747474;text-decoration: none;font-size: 36vw;border-radius: 58%;padding: 1vw 4vw;" href="/standby">⌽</a></body>');
   }
 }
 
