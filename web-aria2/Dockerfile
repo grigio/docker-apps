@@ -33,4 +33,4 @@ RUN echo -e "web: gosu dummy /bin/busybox httpd -f -p 8080 -h /webui-aria2\nback
 
 
 EXPOSE 8080 6800
-#CMD ["goreman", "start"]
+CMD ["goreman", "start"]
